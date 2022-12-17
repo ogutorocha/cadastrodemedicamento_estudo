@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Medicamentos</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <navbar>
+        <h3>Home</h3>
+        <h3>Cadastro de Medicamentos</h3>
+        <h3>Cadastro de Vacinas</h3>
+        <h3>Cadastro de Cosmeticos</h3>
+    </navbar>
+    <header>
+        <div>
+            <img src="img.svg" alt="" width="200px">
+        </div>
+        <div id="divheader">
+            <h1>Cadastro de medicamentos</h1>
+            <h2>Famácia da Gente</h2>
+        </div>
+    </header>
+
+    <section id="baseForm">
+       
+        <div id="form">
+            <form onsubmit="addDrug()">
+                <label for="medName">Nome do Medicamento*</label>
+                <input autocomplete="off" type="text" required id="mname" name="medName" placeholder="Ex: 'Dorflex'">
+                <label for="medQuant">Quantidade Disponível</label>
+                <input autocomplete="off" type="text" required id="mquant" name="medQuant" placeholder="Ex: '100'">
+                <label for="medClasse">Classe de Medicamento</label>
+                <input autocomplete="off" type="text" required id="mclasse" name="medClasse" placeholder="Ex: 'Antibiótico; Antiácido; Antigripal; Xarope'"style="margin-bottom: 30px">
+                   
+                <button class="enviar" type="submit">Cadastrar </button>
+            </form>
+        </div>
+
+        <div id="tabela">
+            <table id="dataTable">
+                <tr>
+                    <th>ID</th>
+                    <th>Medicamento</th>
+                    <th>Quantidade</th>
+                    <th>Classe de medicamento</th>
+                    <th>Remover</th>
+                </tr>
+                <tr>
+                    
+                </tr>
+                   
+            </table>
+        </div>
+    </section>
+
+    <script src="main.js"> </script>
+</body>
+</html>
